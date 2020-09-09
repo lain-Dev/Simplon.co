@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  border: 2px solid black;
+  margin: 50px;
+  height: 800px;
+}
+
+#timbre {
+  display: flex;
+}
+
+#titre {
+  margin-left: 5%;
+}
+
+#ligne1, #ligne2, #ligne3 {
+  border-top: 2px solid #000;
+  padding: 50px;
+  margin: 50px;
+}
+
+#adresse {
+  margin-left: 200px;
+  margin-right: 200px;
+}
