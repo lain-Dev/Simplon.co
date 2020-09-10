@@ -1,0 +1,6 @@
+texte :
+
+  font-size: 16px;
+  font-family: "Verdana";
+  color: rgb(32, 26, 22);
+  font-style: italic;

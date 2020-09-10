@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    background: url(image/BGMontagnes.png) no-repeat;
+    background-color: black;
+    font-family: "Shojumaru-Regular", Helvetica, Arial, sans-serif;
+}
+
+main {
+    background-image: url(image/ensembleFond.png);
+    background-repeat: no-repeat;
+    width: 1689px;
+    height: 2552px;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#menu {
+    background-image: url(image/menuTop/CadreMenu.png);
+    height: 123px;
+    width: 844px;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+}
+
+.btn {
+    margin-top: 13px;
+    width: auto;
+    height: 96px;
+}
+
+#globale {
+    background: url(image/menuTop/btnVueGlobale.png) no-repeat;
+    margin-left: 13px;
+}
+
+#globale:hover {
+    background-image: url(image/menuTop/btnVueGlobale\ MO.png);
+}
+
+#profil {
+    background-image: url(image/CadreProfil/CadreProfil.png);
+    background-repeat: no-repeat;
+    width: 335px;
+    height: 140px;
+    margin-top: 30px;
+}
+
+#profil h2, div {
+    color: white;
+}
+
+#profil h2 {
+    text-align: center;
+    margin-top: 4px;
+}
+
+#profil-details {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+#infos {
+    word-spacing: 10px;
+}
+
+#avatar {
+    
+}

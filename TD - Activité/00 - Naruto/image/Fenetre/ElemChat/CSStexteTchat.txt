@@ -1,0 +1,31 @@
+Systeme_:
+
+  font-size: 12px;
+  font-family: "Verdana";
+  color: rgb(205, 0, 0);
+  font-weight: bold;
+  line-height: 1.2;
+
+Nom:
+
+  font-size: 12px;
+  font-family: "Verdana";
+  color: rgb(3, 0, 131);
+  font-weight: bold;
+  line-height: 1.2;
+
+Texte :
+
+  font-size: 12px;
+  font-family: "Verdana";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+
+Pseudo :
+
+  font-size: 16px;
+  font-family: "Verdana";
+  color: rgb(32, 26, 22);
+  font-style: italic;
+
+

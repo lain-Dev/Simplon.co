@@ -1,0 +1,24 @@
+Txt (chiffre gauche, etc ) :
+
+  font-size: 16px;
+  font-family: "Verdana";
+  color: rgb(32, 26, 22);
+
+Txt vert :
+
+  font-size: 16px;
+  font-family: "Verdana";
+  color: rgb(29, 96, 0);
+
+Txt rouge :
+
+  font-size: 16px;
+  font-family: "Verdana";
+  color: rgb(213, 0, 0);
+
+TxtTotal :
+
+  font-size: 16px;
+  font-family: "Verdana";
+  color: rgb(32, 26, 22);
+  font-weight: bold;

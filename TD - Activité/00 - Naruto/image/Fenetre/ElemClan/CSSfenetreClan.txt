@@ -1,0 +1,16 @@
+texte clan :
+
+  font-size: 16px;
+  font-family: "Verdana";
+  color: rgb(32, 26, 22);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+
+pourcentage XP :
+
+  font-size: 14px;
+  font-family: "Verdana";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.2;

@@ -1,0 +1,6 @@
+CSS Texte Info :
+
+  font-size: 16px;
+  font-family: "Verdana";
+  color: rgb(0, 0, 0);
+  font-weight: bold;

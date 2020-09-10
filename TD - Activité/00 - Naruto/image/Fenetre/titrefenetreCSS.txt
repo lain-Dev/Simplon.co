@@ -1,0 +1,6 @@
+Titre fenetre :
+
+  font-size: 26px;
+  font-family: "Verdana";
+  color: rgb(32, 26, 22);
+  font-weight: bold;

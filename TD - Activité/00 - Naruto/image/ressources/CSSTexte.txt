@@ -1,0 +1,9 @@
+CSS
+
+Chiffres ressources :
+
+  font-size: 14px;
+  font-family: "Verdana";
+  color: rgb(14, 7, 0);
+  font-weight: bold;
+

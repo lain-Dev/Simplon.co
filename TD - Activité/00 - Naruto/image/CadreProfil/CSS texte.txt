@@ -1,0 +1,23 @@
+CSS
+
+Nom Profil :
+
+  font-size: 16px;
+  font-family: "Verdana";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+
+Niveau,XP,Habitant etc ... :
+
+  font-size: 12px;
+  font-family: "Verdana";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+
+Chiffres :
+
+  font-size: 12px;
+  font-family: "Verdana";
+  color: rgb(255, 255, 255);
+
+
