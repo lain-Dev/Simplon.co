@@ -9,6 +9,7 @@ body {
     background: url(image/BGMontagnes.png) no-repeat;
     background-color: black;
     font-family: "Shojumaru-Regular", Helvetica, Arial, sans-serif;
+    display: flex;
 }
 
 main {
@@ -33,19 +34,94 @@ nav {
     margin-top: 50px;
 }
 
-.btn {
-    margin-top: 13px;
-    width: auto;
-    height: 96px;
-}
+ul {
+    list-style-type:none;
+} 
 
+li {
+    float:left; /*pour IE*/
+    margin-top: 13px;
+}
+   
 #globale {
-    background: url(image/menuTop/btnVueGlobale.png) no-repeat;
-    margin-left: 13px;
+    background-image: url(image/menuTop/btnVueGlobale.png);
+    height: 96px;
+    width: 101px;
+    margin-left: 17px;
 }
 
 #globale:hover {
     background-image: url(image/menuTop/btnVueGlobale\ MO.png);
+}
+ 
+#ville {
+    background-image: url(image/menuTop/btnCentreVille.png);
+    height: 96px;
+    width: 101px;
+}
+
+#ville:hover {
+    background-image: url(image/menuTop/btnCentreVille\ MO.png);
+}
+
+#carte {
+    background-image: url(image/menuTop/btnCarte.png);
+    height: 96px;
+    width: 101px;
+}
+
+#carte:hover {
+    background-image: url(image/menuTop/btnCarte\ MO.png);
+}
+
+#classement {
+    background-image: url(image/menuTop/btnClassement.png);
+    height: 96px;
+    width: 101px;
+}
+
+#classement:hover {
+    background-image: url(image/menuTop/btnClassement\ MO.png);
+}
+
+#aide {
+    background-image: url(image/menuTop/btnAide.png);
+    height: 96px;
+    width: 101px;
+}
+
+#aide:hover {
+    background-image: url(image/menuTop/btnAide\ MO.png);
+}
+
+#amelio {
+    background-image: url(image/menuTop/btnAmelio.png);
+    height: 96px;
+    width: 101px;
+}
+
+#amelio:hover {
+    background-image: url(image/menuTop/btnAmelio\ MO.png);
+}
+
+#boutique {
+    background-image: url(image/menuTop/btnBoutique.png);
+    height: 96px;
+    width: 101px;
+}
+
+#boutique:hover {
+    background-image: url(image/menuTop/btnBoutique\ MO.png);
+}
+
+#bonus {
+    background-image: url(image/menuTop/btnBonus.png);
+    height: 96px;
+    width: 101px;
+}
+
+#bonus:hover {
+    background-image: url(image/menuTop/btnBonus\ MO.png);
 }
 
 #profil {
@@ -56,7 +132,7 @@ nav {
     margin-top: 30px;
 }
 
-#profil h2, div {
+#profil {
     color: white;
 }
 
@@ -76,5 +152,172 @@ nav {
 }
 
 #avatar {
-    
+    width: 130px;
+    height: auto;
+    background-image: url(image/avatar.jpg);
+    background-repeat: no-repeat;
+}
+
+#ressource {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+  font-family: "Verdana";
+  color: rgb(14, 7, 0);
+  font-weight: bold;
+}
+
+#fond-ressource {
+    background-image: url(image/ressources/fond.png);
+    width: 1169px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mais {
+    background-image: url(image/ressources/pictoRessNour.png);
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    margin-right: 70px;
+    height: 40px;
+}
+
+#fer {
+    background-image: url(image/ressources/pictoRessMetal.png);
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    margin-right: 70px;
+    height: 40px;
+}
+
+#bois {
+    background-image: url(image/ressources/pictoRessBois.png);
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    margin-right: 70px;
+    height: 40px;
+}
+
+#roche {
+    background-image: url(image/ressources/pictoRessRoche.png);
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    margin-right: 70px;
+    height: 40px;
+}
+
+#fond-infos {
+    background-image: url(image/info/fondInfo.png);
+    width: 541px;
+    height: 60px;
+    font-size: 16px;
+    font-family: "Verdana";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#fond-infos > p:nth-child(1){
+    margin-right: 50px;
+}
+
+#jeux {
+    display: flex;
+    flex-direction: row;
+    width: 1689px;
+    align-items: center;
+    justify-content: center;
+}
+
+#jeux h1 {
+    font-size: 26px;
+  font-family: "Verdana";
+  color: rgb(32, 26, 22);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 9px;
+  
+}
+
+#jeux-gauche {
+    display: flex;
+    flex-direction: column;
+    width: 724px;
+}
+
+#jeux-droite {
+    display: flex;
+    flex-direction: column;
+    width: 478px;
+    margin-bottom: 340px;
+    margin-left: 15px;
+}
+
+#vue {
+    background-image: url(image/Fenetre/vue\ globale.png);
+    width: 724px;
+    height: 901px;
+    margin-bottom: 20px;
+}
+
+#vue > img {
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+#chantier {
+    width: 150px;
+    margin-top: 34px;
+    margin-left: 10px;
+}
+
+#puissance {
+    background-image: url(image/Fenetre/puissance.png);
+    width: 729px;
+    height: 229px;
+    margin-bottom: 20px;
+}
+
+#chat {
+    background-image: url(image/Fenetre/tchat.png);
+    width: 729px;
+    height: 479px;
+}
+
+#bureau {
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    width: 482px;
+    height: 31x;
+    margin-bottom: 20px;
+}
+
+#clan {
+    background-image: url(image/Fenetre/clan.png);
+    background-repeat: no-repeat;
+    width: 482px;
+    height: 195px;
+    margin-bottom: 20px;
+}
+
+#production {
+    background-image: url(image/Fenetre/Production.png);
+    background-repeat: no-repeat;
+    width: 482px;
+    height: 352px;
+    margin-bottom: 20px;
+}
+
+#allies {
+    background-image: url(image/Fenetre/ALLIES.png);
+    background-repeat: no-repeat;
+    width: 482px;
+    height: 352px;
 }
