@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
@@ -10,6 +10,7 @@ body {
     background-color: black;
     font-family: "Shojumaru-Regular", Helvetica, Arial, sans-serif;
     display: flex;
+    background-size: 100%;
 }
 
 main {
@@ -18,6 +19,10 @@ main {
     width: 1689px;
     height: 2552px;
     margin: 0;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 nav {
@@ -152,9 +157,9 @@ li {
 }
 
 #avatar {
+    height: 85px;
     width: 130px;
-    height: auto;
-    background-image: url(image/avatar.jpg);
+    background-image: url(image/avatar2.jpg);
     background-repeat: no-repeat;
 }
 
@@ -222,8 +227,9 @@ li {
     justify-content: center;
 }
 
-#fond-infos > p:nth-child(1){
-    margin-right: 50px;
+#fond-infos > p {
+margin-top: 25px;
+margin-right: 50px;
 }
 
 #jeux {
@@ -254,7 +260,7 @@ li {
     display: flex;
     flex-direction: column;
     width: 478px;
-    margin-bottom: 340px;
+    margin-bottom: 400px;
     margin-left: 15px;
 }
 
@@ -273,8 +279,23 @@ li {
 
 #chantier {
     width: 150px;
-    margin-top: 34px;
+    margin-top: 14px;
     margin-left: 10px;
+}
+
+#chantier-infos {
+    display: flex;
+    margin-top: 20px;
+}
+
+#chantier-infos > div, #puisance-infos > div {
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+#chantier-infos > div > h4, p {
+    margin-bottom: 20px;
 }
 
 #puissance {
@@ -284,10 +305,131 @@ li {
     margin-bottom: 20px;
 }
 
+#puisance-infos {
+    display: flex;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+#puisance-infos > div > h4 {
+    margin-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#puisance-infos > div > h5, p {
+    margin-bottom: 30px;
+}
+
 #chat {
     background-image: url(image/Fenetre/tchat.png);
     width: 729px;
     height: 479px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#chat > h1 {
+    margin-bottom: 5px;
+}
+
+#chatHaut {
+    display: flex;
+    height: 370px;
+}
+
+#chatBas {
+    height: 70px;
+    display: flex;
+}
+
+#texteEnter {
+    width: 580px;
+}
+
+#btnEnter {
+    background-image: url(image/Fenetre/ElemChat/btnSendMail.png);
+    width: 97px;
+}
+
+#btnEnter:hover {
+    background-image: url(image/Fenetre/ElemChat/btnSendMailMO.png);
+}
+
+#chatInfos {
+    display: flex;
+    width: 230px;
+    flex-direction: row;
+}
+
+#speudo {
+    margin-left: 20px;
+    display: flex;
+    margin-top: 250px;
+}
+
+#speudo > div > img {
+    margin-bottom: 5px;
+}
+
+#idForum {
+    margin-left: 10px;
+}
+
+#idForum > p {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+#cursor {
+    background-image: url(image/Fenetre/curseurAss.png);
+    background-repeat: no-repeat;
+    height: 362px;
+    width: 53px;
+    margin-left: 52px;
+    margin-top: 20px;
+
+}
+
+#chatrWrite > p {
+    margin-bottom: 10px;
+    margin-left: 18px;
+    margin-right: 160px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#chatrWrite > p:nth-child(1) {
+    margin-top: 230px;
+}
+
+#texteEnter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#txtG {
+    background-image: url(image/Fenetre/ElemChat/champTxtG.png);
+    height: 47px;
+    background-repeat: no-repeat;
+    width: 25px;
+    margin-left: 55px;
+}
+
+#txtC {
+    background-image: url(image/Fenetre/ElemChat/champTxt.png);
+    height: 47px;
+    width: 500px;
+}
+
+#txtD {
+    background-image: url(image/Fenetre/ElemChat/champTxtD.png);
+    height: 47px;
+    background-repeat: no-repeat;
+    width: 25px;
 }
 
 #bureau {
@@ -304,7 +446,7 @@ li {
     background-repeat: no-repeat;
     width: 482px;
     height: 195px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 #production {
@@ -312,7 +454,7 @@ li {
     background-repeat: no-repeat;
     width: 482px;
     height: 352px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 #allies {
