@@ -9,16 +9,18 @@ body {
     background: url(image/BGMontagnes.png) no-repeat;
     background-color: black;
     font-family: "Shojumaru-Regular", Helvetica, Arial, sans-serif;
-    display: flex;
     background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
     background-image: url(image/ensembleFond.png);
     background-repeat: no-repeat;
     width: 1689px;
-    height: 2552px;
-    margin: 0;
+    height: 2600px;
+    margin-top: 10%;
 }
 
 .bold {
@@ -462,4 +464,45 @@ margin-right: 50px;
     background-repeat: no-repeat;
     width: 482px;
     height: 352px;
+    margin-top: 0px;
+}
+
+#clan {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-family: "Verdana";
+    color: rgb(32, 26, 22);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+}
+
+#infos-clan {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#infos-clan > div:nth-child(1) {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#barre-clan {
+    height: 60px;
+    width: 372px;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+#barre-clan > img:nth-child(1) {
+    position: absolute;
+}
+
+#barre-clan > img:nth-child(2) {
+    position: relative;
+    height: 31px;
+    margin-top: 11px;
 }
