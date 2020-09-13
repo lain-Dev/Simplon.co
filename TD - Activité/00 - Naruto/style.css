@@ -534,3 +534,36 @@ margin-right: 50px;
 #production > div:nth-child(3) > p:nth-child(3) {
     margin-bottom: 10px;
 }
+
+/* ALLIES*/
+
+#allies > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#speudo-allie {
+    display: flex;
+    margin-left: 150px;
+    margin-bottom: 200px;
+}
+
+#cursor-allie {
+    background-image: url(image/Fenetre/curseurAss.png);
+    background-repeat: no-repeat;
+    height: 362px;
+    width: 53px;
+    margin-left: 115px;
+    margin-top: 20px;
+}
+
+
+#speudo-allie > div:nth-child(1) {
+    margin-top: 0px;
+    margin-right: 20px;
+}
+
+#speudo-allie > div:nth-child(1) > img {
+    margin-bottom: 8px;
+}
