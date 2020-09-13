@@ -184,7 +184,7 @@ li {
     justify-content: center;
 }
 
-#mais {
+.mais {
     background-image: url(image/ressources/pictoRessNour.png);
     background-repeat: no-repeat;
     padding-left: 60px;
@@ -192,7 +192,7 @@ li {
     height: 40px;
 }
 
-#fer {
+.fer {
     background-image: url(image/ressources/pictoRessMetal.png);
     background-repeat: no-repeat;
     padding-left: 60px;
@@ -200,7 +200,7 @@ li {
     height: 40px;
 }
 
-#bois {
+.bois {
     background-image: url(image/ressources/pictoRessBois.png);
     background-repeat: no-repeat;
     padding-left: 60px;
@@ -208,7 +208,7 @@ li {
     height: 40px;
 }
 
-#roche {
+.roche {
     background-image: url(image/ressources/pictoRessRoche.png);
     background-repeat: no-repeat;
     padding-left: 60px;
@@ -508,5 +508,29 @@ margin-right: 50px;
 }
 
 #production > div:nth-child(2) {
-    height: 200px
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#production > div:nth-child(2) > div {
+    display: flex;
+    height: 30px;
+}
+
+#production > div:nth-child(2) > div > p {
+    word-spacing: 20px;
+}
+
+#production > div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#production > div:nth-child(3) > p:nth-child(3) {
+    margin-bottom: 10px;
 }
