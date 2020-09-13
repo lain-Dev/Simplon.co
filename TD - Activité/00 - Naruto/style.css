@@ -506,3 +506,7 @@ margin-right: 50px;
     height: 31px;
     margin-top: 11px;
 }
+
+#production > div:nth-child(2) {
+    height: 200px
+}
