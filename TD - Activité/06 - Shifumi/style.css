@@ -19,6 +19,10 @@ h1, p, h3 {
     color: white;
 }
 
+img {
+    border-radius: 6px;
+}
+
 header {
     border-bottom: 5px solid white;
     height: 90px;
@@ -59,8 +63,8 @@ main {
 }
 
 .haut-game, .bas-game {
-    border: 5px solid white;
-    height: 300px;
+    border: 6px solid white;
+    height: 320px;
     width: 900px;
     margin-top: 40px;
     display: flex;
@@ -70,16 +74,16 @@ main {
 
 
 .gamer {
-    border: 5px solid white;
-    height: 250px;
+    border: 6px solid white;
+    height: 270px;
     width: 250px;
 }
 
 
 
 .match {
-    border: 5px solid white;
-    height: 250px;
+    border: 6px solid white;
+    height: 270px;
     width: 250px;
 }
 
@@ -89,8 +93,8 @@ main {
 }
 
 .robot {
-    border: 5px solid white;
-    height: 250px;
+    border: 6px solid white;
+    height: 270px;
     width: 250px;
 }
 
@@ -113,33 +117,37 @@ main {
     height: 215px;
 }
 
+.choix-gamer > img {
+    width: 100%;
+}
+
 .bas-game > div > img {
     width: 100%;
 }
 
 .pierre {
-    border: 5px solid white;
+    border: 6px solid white;
     height: 250px;
     width: 250px;
     border-radius: 20px;
 }
 
 .feuille {
-    border: 5px solid white;
+    border: 6px solid white;
     height: 250px;
     width: 250px;
     border-radius: 20px;
 }
 
 .ciseaux {
-    border: 5px solid white;
+    border: 6px solid white;
     height: 250px;
     width: 250px;
     border-radius: 20px;
 }
 
 .reset {
-    border: 3px solid white;
+    text-align: center;
     margin-bottom: 20px;
     margin-top: 20px;
     animation-name: taille;

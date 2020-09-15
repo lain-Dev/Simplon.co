@@ -9,6 +9,7 @@
 </head>
 <body onload="quandMaPageEstCharge()">
     <header>
+        <h1 id="result">Résultat !</h1>
         <h1 class="titre">SHI-FUN-ME !!</h1>
     </header>
     <main>
@@ -46,7 +47,7 @@
                     </div><div class="cercle"></div><div class="cercle"></div>
                 </div>
                 <div class="choix-gamer">
-                    <img src="image/question.png" alt="">
+                    <img src="image/question.png" alt="" id="img-robot">
                 </div>
             </div>
 
@@ -57,22 +58,22 @@
             
 
                 <div class="pierre" id="img-pierre">
-                <img src="image/pierre.png" alt="" srcset="" onclick="pierre()">
+                <img src="image/pierre.png" alt="pierre" onclick="pierre()">
                 </div>
 
                 <div class="feuille" id="img-feuille">
-                <img src="image/feuille.png" alt="" onclick="feuille()">
+                <img src="image/feuille.png" alt="feuille" onclick="feuille()">
                 </div>
 
                 <div class="ciseaux" id="img-ciseaux">
-                <img src="image/ciseaux.png" alt="" srcset="" onclick="ciseaux()">
+                <img src="image/ciseaux.png" alt="ciseaux" onclick="ciseaux()">
                 </div>
 
            
 
         </section>
 
-        <div class="reset">lain
+        <div class="reset" onclick="reload()">lain
             <button>RESET</button>
         </div>
 
