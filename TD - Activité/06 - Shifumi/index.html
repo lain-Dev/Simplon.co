@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script/script.js"></script>
+    <title>Shifumi</title>
+</head>
+<body onload="quandMaPageEstCharge()">
+    <header>
+        <h1 class="titre">SHI-FUN-ME !!</h1>
+    </header>
+    <main>
+        <!-- Affiche choix Robot et Joueur -->
+        <section class="haut-game">
+
+            <!--Gamer -->
+            <div class="gamer">
+                <div class="top-game">
+                    <h3 id="nomJoueur">gamer</h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <div class="cercle">
+                    </div><div class="cercle"></div><div class="cercle"></div>
+                </div>
+                <div class="choix-gamer">
+                    <img src="image/question.png" alt="" id="img-gamer">
+                </div>
+
+            </div>
+
+            <!--Compteur match -->
+            <div class="match">
+                <div class="top-game">
+                    <h3>Match</h3>
+                </div>
+                <div class="compteur">
+                    <h1 id="compteurNumerique">1</h1>
+                </div>
+            </div>
+
+            <!--Robot -->
+            <div class="robot">
+                <div class="top-game">
+                    <h3>Robot</h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <div class="cercle">
+                    </div><div class="cercle"></div><div class="cercle"></div>
+                </div>
+                <div class="choix-gamer">
+                    <img src="image/question.png" alt="">
+                </div>
+            </div>
+
+        </section>
+
+        <!--choix Pierre, feuille, Ciseaux -->
+        <section class="bas-game">
+            
+
+                <div class="pierre" id="img-pierre">
+                <img src="image/pierre.png" alt="" srcset="" onclick="pierre()">
+                </div>
+
+                <div class="feuille" id="img-feuille">
+                <img src="image/feuille.png" alt="" onclick="feuille()">
+                </div>
+
+                <div class="ciseaux" id="img-ciseaux">
+                <img src="image/ciseaux.png" alt="" srcset="" onclick="ciseaux()">
+                </div>
+
+           
+
+        </section>
+
+        <div class="reset">lain
+            <button>RESET</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2020 Designed By L@in</p>
+    </footer>
+</body>
+</html>

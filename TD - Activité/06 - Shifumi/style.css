@@ -1,0 +1,153 @@
+* {
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    border: 5px solid white;
+    height: 900px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 100px;
+    background-color: black;
+    border-radius: 2%;
+}
+
+h1, p, h3 {
+    color: white;
+}
+
+header {
+    border-bottom: 5px solid white;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.titre  {
+    color: orange;
+    animation-name: couleur;
+    animation-duration: 10s;
+    margin-top: 20px;
+    animation-iteration-count: infinite;
+}
+@keyframes couleur{
+    from{
+        color: orange;
+    }
+    25%{
+        color: blue;
+    }
+    50%{
+        color: purple;
+    }
+    75%{
+        color: red;
+    }
+    to{
+        color: orange;
+    }
+}
+
+/*partie du jeu*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.haut-game, .bas-game {
+    border: 5px solid white;
+    height: 300px;
+    width: 900px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+
+.gamer {
+    border: 5px solid white;
+    height: 250px;
+    width: 250px;
+}
+
+
+
+.match {
+    border: 5px solid white;
+    height: 250px;
+    width: 250px;
+}
+
+.compteur {
+    font-size: 140px;
+    text-align: center;
+}
+
+.robot {
+    border: 5px solid white;
+    height: 250px;
+    width: 250px;
+}
+
+.cercle {
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    background: green;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+
+.top-game {
+    display: flex;
+    border-bottom: 3px solid white;
+}
+
+.choix-gamer {
+    height: 215px;
+}
+
+.bas-game > div > img {
+    width: 100%;
+}
+
+.pierre {
+    border: 5px solid white;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+.feuille {
+    border: 5px solid white;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+.ciseaux {
+    border: 5px solid white;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+.reset {
+    border: 3px solid white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    animation-name: taille;
+    border-radius: 5px;
+}
+
+
+/*footer*/
+footer {
+    text-align: center;
+}
