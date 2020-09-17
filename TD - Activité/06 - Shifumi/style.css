@@ -6,7 +6,7 @@
 
 body {
     border: 5px solid white;
-    height: 900px;
+    height: 1100px;
     width: 1200px;
     margin-left: auto;
     margin-right: auto; 
@@ -25,9 +25,10 @@ img {
 
 header {
     border-bottom: 5px solid white;
-    height: 90px;
+    height: 180px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .titre  {
@@ -79,6 +80,33 @@ main {
     width: 250px;
 }
 
+.nameUser {
+    width: 60px;
+    animation-name: couleur;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes couleur{
+    from{
+        color: yellow;
+    }
+    25%{
+        color: red;
+    }
+    50%{
+        color: yellow;
+    }
+    75%{
+        color: red;
+    }
+    to{
+        color: yellow;
+    }
+}
+
+.nameRobot {
+    width: 60px;
+}
 
 
 .match {
@@ -102,7 +130,7 @@ main {
     width: 15px;
     height: 15px;
     border-radius: 20px;
-    background: green;
+    background: white;
     margin-left: 5px;
     margin-top: 3px;
 }
@@ -153,6 +181,11 @@ main {
     margin-top: 20px;
     animation-name: taille;
     border-radius: 5px;
+}
+
+body > main > div > button {
+    height: 60px;
+    width: 120px;
 }
 
 
