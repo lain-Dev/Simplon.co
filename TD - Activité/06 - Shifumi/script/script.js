@@ -1,6 +1,8 @@
 
-var choixUser, choixRobot, compteurUser, computeurOrdi, count;
-
+var choixUser, choixRobot, compteurUser, computeurOrdi, count, reset;
+compteurOrdi = 0;
+compteurUser = 0;
+count = 0
 
 //Recharger la page
 function reload(){
@@ -8,12 +10,13 @@ location.reload();
 };
 
 
-compteurOrdi = 0;
-compteurUser = 0;
+
 
 // Led functions
 function redLedUser1() {
     document.getElementById("led1").style.backgroundColor = "red";
+        document.getElementById("led2").style.backgroundColor = "white";
+        document.getElementById("led3").style.backgroundColor = "white";
 }
 function redLedUser2() {
     document.getElementById("led2").style.backgroundColor = "red";
@@ -24,6 +27,8 @@ function redLedUser3() {
 
 function greenLedUser1() {
     document.getElementById("led1").style.backgroundColor = "green";
+    document.getElementById("led2").style.backgroundColor = "white";
+        document.getElementById("led3").style.backgroundColor = "white";
 }
 function greenLedUser2() {
     document.getElementById("led2").style.backgroundColor = "green";
@@ -34,6 +39,8 @@ function greenLedUser3() {
 
 function orangeLedUser1() {
     document.getElementById("led1").style.backgroundColor = "orange";
+    document.getElementById("led2").style.backgroundColor = "white";
+        document.getElementById("led3").style.backgroundColor = "white";
 }
 function orangeLedUser2() {
     document.getElementById("led2").style.backgroundColor = "orange";
@@ -44,6 +51,8 @@ function orangeLedUser3() {
 
 function redLedIA1() {
     document.getElementById("ledIA1").style.backgroundColor = "red";
+    document.getElementById("ledIA2").style.backgroundColor = "white";
+        document.getElementById("ledIA3").style.backgroundColor = "white";
 }
 function redLedIA2() {
     document.getElementById("ledIA2").style.backgroundColor = "red";
@@ -54,6 +63,8 @@ function redLedIA3() {
 
 function greenLedIA1() {
     document.getElementById("ledIA1").style.backgroundColor = "green";
+    document.getElementById("ledIA2").style.backgroundColor = "white";
+        document.getElementById("ledIA3").style.backgroundColor = "white";
 }
 function greenLedIA2() {
     document.getElementById("ledIA2").style.backgroundColor = "green";
@@ -65,6 +76,8 @@ function greenLedIA3() {
 
 function orangeLedIA1() {
     document.getElementById("ledIA1").style.backgroundColor = "orange";
+    document.getElementById("ledIA2").style.backgroundColor = "white";
+        document.getElementById("ledIA3").style.backgroundColor = "white";
 }
 function orangeLedIA2() {
     document.getElementById("ledIA2").style.backgroundColor = "orange";
@@ -80,9 +93,12 @@ function getPseudo() {
 }
 
 
+
 function pierre() { 
     document.getElementById('img-gamer').src='image/pierre.png';
     choixUser = "pierre";
+    document.getElementById('gif').src='image/gif4.gif';
+        document.getElementById('gif1').src='image/gif4.gif';
     robot();
     resultat();
 }
@@ -90,6 +106,8 @@ function pierre() {
 function feuille() { 
     document.getElementById('img-gamer').src='image/feuille.png';
     choixUser = "feuille";
+    document.getElementById('gif').src='image/gif4.gif';
+        document.getElementById('gif1').src='image/gif4.gif';
     robot();
     resultat();
 }
@@ -97,6 +115,8 @@ function feuille() {
 function ciseaux() { 
     document.getElementById('img-gamer').src='image/ciseaux.png';
     choixUser = "ciseaux";
+    document.getElementById('gif').src='image/gif4.gif';
+        document.getElementById('gif1').src='image/gif4.gif';
     robot();
     resultat();
 }
@@ -119,7 +139,7 @@ function robot() {
   }
 
 
-  count = 0
+  
 
 function resultat() {
 
@@ -180,11 +200,11 @@ function resultat() {
         document.getElementById('gif').src='image/winner1.gif';
         document.getElementById('gif1').src='image/winner1.gif';
     }
-    /*if (count == 3) {
-        if (confirm("Veux-tu rejouer ?")) {
-            document.location.reload();
-        }
-    }*/
+    if (count == 3) {
+        compteurOrdi = 0;
+        compteurUser = 0;
+        count = 0;
+    }
 }
 
 
