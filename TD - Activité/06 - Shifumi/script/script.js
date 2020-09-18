@@ -188,7 +188,7 @@ function resultat() {
             orangeLedUser3();
             orangeLedIA3();
         }
-      }
+    }
       count = count + 1
       if (compteurOrdi > compteurUser && count == 3) {
         document.getElementById('gif').src='image/gameOver1.gif';
