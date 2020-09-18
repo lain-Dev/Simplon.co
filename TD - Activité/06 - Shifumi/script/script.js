@@ -2,7 +2,7 @@
 var choixUser, choixRobot, compteurUser, computeurOrdi, count, reset;
 compteurOrdi = 0;
 compteurUser = 0;
-count = 0
+count = 0;
 
 //Recharger la page
 function reload(){
