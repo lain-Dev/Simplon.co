@@ -3,6 +3,7 @@ var choixUser, choixRobot, compteurUser, computeurOrdi, count, reset;
 compteurOrdi = 0;
 compteurUser = 0;
 count = 0;
+bestScore = 0;
 
 
 
@@ -206,19 +207,21 @@ function resultat() {
         document.getElementById('gif1').src='image/gameOver1.gif';
         console.log("Round perdu");
         roundWin = 0;
-        bestRound()
+        score()
     } else if (compteurOrdi == compteurUser && count == 3) {
         document.getElementById('gif').src='image/egality1.gif';
         document.getElementById('gif1').src='image/egality1.gif';
         console.log("Round presque gagné  mais gagné !");
         roundWin ++;
-        bestRound()
+        score()
+        theBestScore()
     } else if (compteurOrdi < compteurUser && count == 3) {
         document.getElementById('gif').src='image/winner1.gif';
         document.getElementById('gif1').src='image/winner1.gif';
         console.log("Round gagné");
         roundWin ++;
-        bestRound()
+        score()
+        theBestScore()
     }
 
     if (count == 3) {
@@ -232,18 +235,29 @@ function resultat() {
 roundWin = 0;
 
 
-function bestRound () {
+function score () {
 
-    //document.getElementById("roundWinner").innerText = roundWin;
+    document.getElementById("score").innerText = roundWin;
 
     if (roundWin > 0) {
         console.log("nombre de round Gagné: " +roundWin);
+        theBestScore()
     }else {
         console.log("Dommage Round perdu on recommence !");
     }
 }
 
 
+function theBestScore() {
+
+    document.getElementById("bestScore").innerText = roundWin;
+
+    if (roundWin > bestScore) {
+
+        bestScore = roundWin;
+        console.log("meilleur score")
+    }
+}
 
 
 

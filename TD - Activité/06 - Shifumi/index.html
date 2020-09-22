@@ -7,8 +7,8 @@
     <script src="script/script.js"></script>
     <title>Shifumi</title>
 </head>
-<body onload="robot();">
-    <header>
+<body>
+    <header onload="reload()">
         <img src="image/gif4.gif" alt="" srcset="" id="gif">;&emsp;&emsp;;&emsp;&emsp;;&emsp;&emsp;;&emsp;&emsp;;&emsp;&emsp;;&emsp;&emsp;;&emsp;&emsp;;
         <h1 class="titre">SHI-FUN-ME !!</h1>;&emsp;&emsp;;&emsp;&emsp;;&emsp;&emsp;;&emsp;&emsp;;&emsp;&emsp;;&emsp;&emsp;;&emsp;&emsp;;
         <img src="image/gif4.gif" alt="" srcset="" id="gif1">
@@ -76,13 +76,16 @@
 
         </section>
 
-        <section class="tableauscore">
+        <section class="tableauScore">
 
             <div class="reset" onclick="reload()">
                 <button id="btn-reset">RESET</button>
             </div>
-            <div class="BestScore">
-                <p>Nombre de Round Gagné Affilé:  </p>
+            <div class="">
+                <h2>Nombre de Round Gagné Affilé: <span id="score">0</span> </h2>
+            </div>
+            <div>
+                <h2>Best Round  : <span id="bestScore">0</span></h2>
             </div>
 
         </section>
