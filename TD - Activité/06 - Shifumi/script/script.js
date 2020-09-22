@@ -4,6 +4,9 @@ compteurOrdi = 0;
 compteurUser = 0;
 count = 0;
 
+
+
+
 //Recharger la page
 function reload(){
 location.reload();
@@ -86,12 +89,12 @@ function orangeLedIA3() {
     document.getElementById("ledIA3").style.backgroundColor = "orange";
 }
 
-
+/*
 function getPseudo() {
     pseudo = prompt("Quel est ton nom ?")
     document.getElementById("pseudo").innerText = pseudo;
 }
-
+*/
 
 
 function pierre() { 
@@ -122,6 +125,9 @@ function ciseaux() {
 }
 
 
+
+
+
 function robot() {
   
     randomNumber = Math.round(Math.random() * 3);
@@ -138,8 +144,8 @@ function robot() {
       }
   }
 
-
   
+   
 
 function resultat() {
 
@@ -192,24 +198,51 @@ function resultat() {
 
 
       count = count + 1
+      
 
       
       if (compteurOrdi > compteurUser && count == 3) {
         document.getElementById('gif').src='image/gameOver1.gif';
         document.getElementById('gif1').src='image/gameOver1.gif';
+        console.log("Round perdu");
+        roundWin = 0;
+        bestRound()
     } else if (compteurOrdi == compteurUser && count == 3) {
         document.getElementById('gif').src='image/egality1.gif';
         document.getElementById('gif1').src='image/egality1.gif';
+        console.log("Round presque gagné  mais gagné !");
+        roundWin ++;
+        bestRound()
     } else if (compteurOrdi < compteurUser && count == 3) {
         document.getElementById('gif').src='image/winner1.gif';
         document.getElementById('gif1').src='image/winner1.gif';
+        console.log("Round gagné");
+        roundWin ++;
+        bestRound()
     }
+
     if (count == 3) {
         compteurOrdi = 0;
         compteurUser = 0;
         count = 0;
     }
 }
+
+
+roundWin = 0;
+
+
+function bestRound () {
+
+    //document.getElementById("roundWinner").innerText = roundWin;
+
+    if (roundWin > 0) {
+        console.log("nombre de round Gagné: " +roundWin);
+    }else {
+        console.log("Dommage Round perdu on recommence !");
+    }
+}
+
 
 
 

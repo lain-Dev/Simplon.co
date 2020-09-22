@@ -175,13 +175,20 @@ main {
     border-radius: 20px;
 }
 
+.tableauScore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .reset {
     text-align: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin: auto;
     animation-name: taille;
     border-radius: 5px;
 }
+
+
 
 body > main > div > button {
     height: 60px;
