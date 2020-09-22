@@ -189,7 +189,11 @@ function resultat() {
             orangeLedIA3();
         }
     }
+
+
       count = count + 1
+
+      
       if (compteurOrdi > compteurUser && count == 3) {
         document.getElementById('gif').src='image/gameOver1.gif';
         document.getElementById('gif1').src='image/gameOver1.gif';
