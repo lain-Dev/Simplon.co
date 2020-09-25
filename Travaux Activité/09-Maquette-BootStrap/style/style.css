@@ -1,0 +1,53 @@
+* {
+margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Ubuntu",sans-serif;
+  box-sizing: border-box;
+
+}
+
+#main {
+    background: url(../image/bureau.jpeg) no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+#main > div:nth-child(1) > h1 {
+    font-size: 100px;
+}
+
+.border {
+    border-top: 1px solid #000;
+    width : 30%;
+}
+
+#logo {
+    width: 80%;;
+}
+
+
+#logo img {
+    height: 20px;
+}
+
+#logo > div {
+    width: 150px;
+    height: 60px;
+}
+
+#logo > div > a > p {
+    font-size: 18px;
+    color: black;
+}
+
+#border2 {
+    border-top: 5px solid rgb(236, 234, 234);
+    width : 30%;
+}
+
+#section04 {
+    background: url(../image/foot.jpeg) no-repeat center;
+    background-size: cover;
+    height: 30vh;
+}
