@@ -1,0 +1,113 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #282929;
+    overflow-x: hidden;
+}
+
+.home {
+    background: url(../image/home.jpg) center center no-repeat fixed;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.display-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100vh;
+    min-height: 100%;
+}
+
+h1, h2, h3, h4, p {
+    color: white;
+}
+
+#color-radis, i {
+    color: #c79864;
+}
+
+nav a, ul {
+    font-size: 20px;
+}
+
+#home > div > div > h3 {
+    color: #c3c0c0;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+#home > div > div > h1 {
+    color: #fff;
+    font-size: 80px;
+    margin: 30px 0;
+    text-transform: capitalize;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+#home > div > div > div > p {
+    position: relative;
+    color: #c3c0c0;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 0;
+    margin-bottom: 50px;
+    padding-left: 44px;
+}
+
+.btn-main {
+    background: linear-gradient(to right, #c79864, #cc7f39);
+    width: 155px;
+    height: 48px;
+    border-radius: 24px;
+}
+
+.btn-white {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.hr-orange {
+    background: #cc7f39;
+    width: 32px;
+    height: 3px;
+    position: absolute;   
+}
+
+.about-me {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.about-me .about-image {
+    padding: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.services {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    background: #2c2d2d;
+}
+
+.services .service {
+    position: relative;
+    background: #282929;
+    text-align: center;
+    padding: 25px 8px;
+    margin-bottom: 30px;
+}
+
+.service p {
+    color: #a2a2a2;
+}
