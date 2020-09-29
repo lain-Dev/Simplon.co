@@ -23,7 +23,7 @@ h1, h2, h3, h4, p {
     color: white;
 }
 
-#color-radis, i {
+#color-radis, .fa {
     color: #c79864;
 }
 
@@ -80,7 +80,8 @@ nav a, ul {
     background: #cc7f39;
     width: 32px;
     height: 3px;
-    position: absolute;   
+    /*position: absolute;*/
+    margin: 15px 5px;
 }
 
 .about-me {
