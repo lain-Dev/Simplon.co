@@ -84,9 +84,10 @@ nav a, ul {
     margin: 15px 5px;
 }
 
-.about-me {
+.about-me, .resume {
     padding-top: 100px;
     padding-bottom: 100px;
+    background-color: #282929;
 }
 
 .about-me .about-image {
@@ -106,7 +107,6 @@ nav a, ul {
     background: #282929;
     text-align: center;
     padding: 25px 8px;
-    margin-bottom: 30px;
 }
 
 .service p {
