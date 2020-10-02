@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<!--Font Google-->
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+<!--My CSS-->
+<link rel="stylesheet" href="style.css">
+    <title>TODO Punk</title>
+</head>
+<body>
+    <div class="container-fluid" style="padding: 5%;">
+        <header class="d-flex flex-column">
+            <!--Titre page-->
+            <div class="text-center my-5">
+                <h1>TODO Punk</h1>
+            </div>
+            <div class="d-flex justify-content-center">
+                <img src="image/ordi.gif" alt="ordinateur" srcset="" id="ordi">
+            </div>
+            <div class="date" style="margin-left: 10px;">
+                <p id="day" class="d-flex justify-content-center pt-2">dd/mm/yy</p>
+            </div>
+        </header>
+
+        <!---->
+        <section class="todoList mt-4 px-3">
+
+            <!--formulaire-->
+            <form>
+                <div class="form-row">
+                    <!--choix niveau-->
+                    <div class="form">
+                        <select class="form-control" id="start">
+                            <option selected>Niveau</option>
+                            <option>important</option>
+                            <option>urgent</option>
+                            <option>normale</option>
+                            <option>a voir</option>
+                        </select>
+                    </div>
+                    <!--texte texte a entrer-->
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="entrer tâche">
+                    </div>
+                      <!--Btn validation-->
+                    <button type="submit" class="btn btn-primary">envoyer</button>
+                </div>
+            </form>
+
+            <!--tableau-->
+            <table class="table table-sm o_main_table mt-4 rs-table-bordered">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col"><i class="fas fa-star d-flex justify-content-center mb-1"></i></th>
+                    <th scope="col" class="col">Tâche à faire</th>
+                    <th scope="col">satus</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table-secondary">
+                    <th scope="row"><i class="fas fa-star text-success d-flex justify-content-center mt-1"></i></th>
+                    <td>attente de tâche</td>
+                    <td>
+                        <!-- Default switch -->
+                        <div class="custom-control custom-switch text-center">
+                            <input type="checkbox" class="custom-control-input" id="customSwitches">
+                            <label class="custom-control-label" for="customSwitches"></label>
+                        </div>
+                    </td>
+                </tbody>
+              </table>
+              <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary">envoyer</button>
+              </div>
+              
+        </section>
+
+        
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

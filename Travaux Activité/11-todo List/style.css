@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    background: url(image/fond.png) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+h1, h2, p {
+    color: limegreen;
+}
+
+#ordi {
+    border-radius: 50%;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.date {
+    border: 3px solid limegreen;
+    border-radius: 5px;
+    height: 40px;
+    width: 150px;
+}
+
+
+table td,
+table th
+{
+  border: 5px solid rgba(255, 7, 234, 0.158) !important;
+  border-radius: 10px;
+}
+
