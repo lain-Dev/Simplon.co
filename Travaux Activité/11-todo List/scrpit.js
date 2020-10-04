@@ -5,12 +5,12 @@ window.onload = function() {
         var jour=maintenant.getDate();
         var mois=maintenant.getMonth()+1;
         var an=maintenant.getFullYear();
-        document.getElementById(day).innerHTML = (jour,"/",mois,"/",an,".");
+        document.getElementById(day).innerHTML = (jour,"/",mois,"/",an);
+        console.log("la date du jour est " + date());
     }
-   
-
+    date();
+    
 }
-
 
 
 

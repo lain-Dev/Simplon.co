@@ -14,7 +14,7 @@ body {
     
 }
 
-h1, h2, p {
+h1, h2, p, ul {
     color: limegreen;
 }
 
@@ -35,7 +35,11 @@ h1, h2, p {
 table td,
 table th
 {
-  border: 5px solid rgba(255, 7, 234, 0.158) !important;
-  border-radius: 10px;
+ 
+  border-radius: 50px;
 }
 
+table {
+    border-spacing: 10px;
+    border-collapse: separate;
+}
