@@ -6,15 +6,15 @@
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!--Font Google-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <!--My CSS-->
     <link rel="stylesheet" href="style.css">
-    <!--My script-->
-    <script src="scrpit.js"></script>
+    
     <title>TODO Punk</title>
 </head>
-<body>
+<body onload="setDate()">
     <div class="container-fluid" style="padding: 5%;">
         <header class="d-flex flex-column">
             <!--Titre page-->
@@ -25,7 +25,8 @@
                 <img src="image/ordi.gif" alt="ordinateur" srcset="" id="ordi">
             </div>
             <div class="date" style="margin-left: 10px;">
-                <p id="dateDuJour" class="d-flex justify-content-center pt-2"></p>
+                <!--<p id="dateDuJour" class="d-flex justify-content-center pt-2">jj/mm/YY</p>-->
+                <input type="date" id="myDate" />
             </div>
         </header>
 
@@ -33,8 +34,8 @@
         <section class="todoList mt-4 px-3">
 
             <!--formulaire-->
-            <form>
-                <div class="form-row">
+            <!-- <form> -->
+                <div class="form-row" id="formulaire">
                     <!--choix niveau-->
                     <div class="form">
                         <select class="form-control" id="start">
@@ -47,12 +48,12 @@
                     </div>
                     <!--texte texte a entrer-->
                     <div class="col">
-                        <input type="text" class="form-control" placeholder="entrer tâche" id="itemInput">
+                        <input type="text" class="form-control" placeholder="entrer tâche" id="myInput">
                     </div>
                       <!--Btn validation-->
-                    <button type="submit" class="btn btn-primary" id="addButton">enter</button>
+                    <button type="submit" class="btn btn-primary" onclick="newElement()">enter</button>
                 </div>
-            </form>
+            <!-- </form> -->
 
             <!--tableau-->
             <table class="table table-sm o_main_table mt-4 rs-table-bordered">
@@ -63,30 +64,16 @@
                     <th scope="col">status</th>
                   </tr>
                 </thead>
-                <!--tache exemple-->
-                <tbody>
-                  <tr class="table-secondary">
-                    <th scope="row"><i class="fas fa-star text-success d-flex justify-content-center mt-2"></i></th>
-                    <td>
-                        <div class="d-flex justify-content-between align-items-center">
-                            attente de tâche <button type="button" class="btn btn-danger mr-3" id="delButton">Del</button></td>
-                        </div>
-                    <td>
-                        <!-- Default switch -->
-                        <div class="custom-control custom-switch text-center mt-2">
-                            <input type="checkbox" class="custom-control-input" id="customSwitches">
-                            <label class="custom-control-label" for="customSwitches"></label>
-                        </div>
-                    </td>
-                </tbody>
+            </table>
+            
+            <!--List ToDoList-->
+            <ul id="myUl">
+            </ul>
 
-
-              </table>
-              
-              <!--Btn-->
-              <div class="d-flex justify-content-center">
-                <button type="submit" class="btn btn-primary" id="clearButton">reset</button>
-              </div>
+            <!--Btn-->
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary" onclick="reset()">reset</button>
+            </div>
               
         </section>
 
@@ -103,8 +90,10 @@
 
 
 
-
+    <!--My script-->
+    <script src="scrpit.js"></script>
     <!-- Optional JavaScript -->
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
