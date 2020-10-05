@@ -24,7 +24,10 @@ function reset() {
 //insérer item dans la liste
 
 function newElement() {
-    console.log(document.getElementById("myUl"));
+    
+    var iconStar = document.createElement('i');
+    iconStar.classList ='fas fa-star';
+
     var li = document.createElement("li");
     var inputValue = document.getElementById("myInput").value;
     li.innerHTML = inputValue;
@@ -34,9 +37,10 @@ function newElement() {
     } else {
       document.getElementById("myUl").appendChild(li);
     }
+
+    li.appendChild(iconStar);
     document.getElementById("myInput").value = "";
-    console.log(document.getElementById("myUl"));
-    
+        
 }    
 
 // $('#formulaire').on('click', 'button', function () {
