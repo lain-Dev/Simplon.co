@@ -14,7 +14,7 @@ body {
     
 }
 
-h1, h2, h3, p, ul, li {
+h1, h2, h3, p {
     color: limegreen;
 }
 
@@ -31,6 +31,24 @@ h1, h2, h3, p, ul, li {
     width: 220px;
 }
 
+/*tête du tableau*/
+table td,
+table th
+{
+
+  border-radius: 5px;
+}
+
+table {
+    border-collapse: separate;
+}
+
+
+li {
+    list-style: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
 
 /* Remove margins and padding from the list */
 ul {
@@ -38,8 +56,8 @@ ul {
     padding: 0;
   }
   
-  /* Style the list items */
-  ul li {
+/* Style the list items */
+ul li {
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
@@ -49,7 +67,6 @@ ul {
     list-style: none;
     border-radius: 10px;
     margin-bottom: 20px;
-    margin-top: 20px;
     display: flex;
     height: 45px;
     justify-content: space-between;
@@ -59,27 +76,38 @@ ul {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
+}
   
-  /* Set all odd list items to a different color (zebra-stripes) */
-  ul li:nth-child(odd) {
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
     background: #f9f9f9;
-  }
+}
   
-  /* Darker background-color on hover */
-  ul li:hover {
+/* Darker background-color on hover */
+ul li:hover {
     background: #ddd;
-  }
+}
   
-  /* When clicked on, add a background color and strike out text */
-  ul li.checked {
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
     background: #888;
     color: #fff;
     text-decoration: line-through;
-  }
+}
   
-  
-  
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.orange {
+  color: orange;
+}
+
+
   
   
   
