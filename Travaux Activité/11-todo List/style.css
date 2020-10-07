@@ -107,7 +107,12 @@ ul li.checked {
   color: orange;
 }
 
-
+.page {
+    background-color: limegreen;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 400px;
+}
   
   
   

@@ -1,0 +1,8 @@
+tr,th, td {
+    border: 1px solid black;
+}
+
+table {
+    border: 1px solid black;
+    font: 20px "Open Sans", Helvetica, Arial, sans-serif;
+}

@@ -66,15 +66,16 @@
             </table>
 
             <!--List ToDoList-->
-            <ul id="myUl">
-                <!--
-                <li>
-                    <i class="fas fa-star text-info" id="star"></i>
-                    <p class="text-info">Tâche à faire</p>
-                    <p class="text-info">Delete</p>
-                </li>
-                -->
-            </ul>
+            <ul id="myUl"></ul>
+
+            <!--pagination-->
+            <div class="page d-flex justify-content-center align-items-center container-fluid">
+                <button class="btn" onclick="firstPage()">|<</button>
+                <button class="btn" onclick="previous()"><</button>
+                <span id="pageInfo"></span>
+                <button class="btn" onclick="nextPage()">></button>
+                <button class="btn" onclick="lastPage()">>|</button>
+            </div>
 
             <!--Btn-->
             <div class="d-flex justify-content-center">
@@ -98,6 +99,7 @@
 
     <!--My script-->
     <script src="scrpit.js"></script>
+    <script src="pagination.js"></script>
     <!-- Optional JavaScript -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
