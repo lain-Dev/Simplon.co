@@ -64,7 +64,9 @@ function newElement() {
       document.getElementById("myUl").appendChild(li);
     }
       
+    
     console.log(listTodo);
+  
       //version jQuery: exemple créer ma ligne avec code html
       // $("#myUl").append(`
       // <li>

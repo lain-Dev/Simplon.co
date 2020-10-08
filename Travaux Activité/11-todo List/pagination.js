@@ -1,7 +1,6 @@
 //faut trouver comment recupérer les valeurs de id myUl pour convertir en Array
 var listTodo = document.getElementById("myUl").childNodes;
-
-
+//var listTodo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 let numberOfitems = 5;
 let first = 0;
@@ -38,19 +37,20 @@ function lastPage() {
     showList();
 }
 
+
 function showList() {
     let tbaleList = '';
     for(let i = first; i < first + numberOfitems; i++){
         if(i < listTodo.length){
             tbaleList+=`
-                <tr>
-                    <td>${listTodo[i]}</td>
-                </tr>
+                <ul>
+                    <li>${listTodo[i]}</li>
+                </ul>
             `
         }
     }
 
-    //document.getElementById('myUl').innerHTML = tbaleList;
+    document.getElementById('myUl').innerHTML = tbaleList;
     showpageInfo();
 }
 
