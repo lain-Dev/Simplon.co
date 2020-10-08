@@ -64,9 +64,20 @@ function newElement() {
       document.getElementById("myUl").appendChild(li);
     }
       
+    let numberOfitems = 4;
+    let actualPage = 1;
     
-    console.log(listTodo);
-  
+
+    var listTodo = document.querySelectorAll("#myUl li").length
+    
+    let maxPage= Math.ceil( listTodo/ numberOfitems);
+
+    function showpageInfo() {
+      document.getElementById('pageInfo').innerHTML = `
+          page ${actualPage} / ${maxPage}
+      `
+    }
+    showpageInfo();
       //version jQuery: exemple créer ma ligne avec code html
       // $("#myUl").append(`
       // <li>
