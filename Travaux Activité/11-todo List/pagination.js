@@ -1,6 +1,6 @@
 //faut trouver comment recupérer les valeurs de id myUl pour convertir en Array
 //var listTodo = [document.getElementById("myUl").childNodes]
-var listTodo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+var listTodo = [];
 
 let numberOfitems = 4;
 let first = 0;
@@ -16,7 +16,7 @@ function firstPage() {
 }
 
 function nextPage() {
-    if(first+numberOfitems+1<=listTodo.length) {
+    if(first+numberOfitems<=listTodo.length) {
         first+=numberOfitems;
         actualPage++;
         showList();
@@ -59,3 +59,5 @@ function showpageInfo() {
         page ${actualPage} / ${maxPage}
     `
 }
+
+//tableau_liste.push({tache: $('.text_input').val() });

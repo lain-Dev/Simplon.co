@@ -63,26 +63,11 @@ function newElement() {
       li.appendChild(iconStar);
       li.appendChild(p);
       li.appendChild(delBtn); 
+      //listTodo.push($('#myInput').val());
+      //showList();
       document.getElementById("myUl").appendChild(li);
       console.log(listTodo);
     }  
-
-    //pagination apply :
-
-let numberOfitems = 4;
-let actualPage = 1;
-
-var listTodo = document.querySelectorAll("#myUl li").length
-
-let maxPage= Math.ceil( listTodo/ numberOfitems);
-
-function showpageInfo() {
-  document.getElementById('pageInfo').innerHTML = `
-      page ${actualPage} / ${maxPage}
-  `
-}
-showpageInfo();
-
 }   
   
 
