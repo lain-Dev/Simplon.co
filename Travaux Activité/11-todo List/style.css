@@ -49,6 +49,11 @@ li {
     margin-bottom: 20px;
 }
 
+.myUl li {
+    display:inline-block;
+    padding:5px;
+  }
+
 /* Remove margins and padding from the list */
 ul {
     margin: 0;
@@ -112,9 +117,7 @@ ul li.checked {
     margin-bottom: 20px;
     width: 400px;
 }
-  
-  
-  
+
   
   
   

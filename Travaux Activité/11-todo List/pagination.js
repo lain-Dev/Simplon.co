@@ -1,8 +1,8 @@
 //faut trouver comment recupérer les valeurs de id myUl pour convertir en Array
-var listTodo = document.getElementById("myUl").childNodes;
-//var listTodo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+//var listTodo = [document.getElementById("myUl").childNodes]
+var listTodo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-let numberOfitems = 5;
+let numberOfitems = 4;
 let first = 0;
 let actualPage = 1;
 let maxPage= Math.ceil(listTodo.length / numberOfitems);

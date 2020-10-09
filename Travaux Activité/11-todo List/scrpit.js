@@ -31,6 +31,8 @@ for(li in liste){
   }
 }
 
+
+
 //insérer item dans la liste
 
 function newElement() {
@@ -53,7 +55,7 @@ function newElement() {
     var li = document.createElement("li");
     var inputValue = document.getElementById("myInput").value;
     p.innerHTML = inputValue;//si je mets li avant le texte se place en premier avant étoile
-
+    
     //vérifie qu'une valeur est bien entré pour pas ajouter une tache vide
     if (inputValue === '') {
       alert("entrer une tâche !");
@@ -62,32 +64,27 @@ function newElement() {
       li.appendChild(p);
       li.appendChild(delBtn); 
       document.getElementById("myUl").appendChild(li);
-    }
-      
-    let numberOfitems = 4;
-    let actualPage = 1;
-    
+      console.log(listTodo);
+    }  
 
-    var listTodo = document.querySelectorAll("#myUl li").length
-    
-    let maxPage= Math.ceil( listTodo/ numberOfitems);
+    //pagination apply :
 
-    function showpageInfo() {
-      document.getElementById('pageInfo').innerHTML = `
-          page ${actualPage} / ${maxPage}
-      `
-    }
-    showpageInfo();
-      //version jQuery: exemple créer ma ligne avec code html
-      // $("#myUl").append(`
-      // <li>
-      //     <i class="fas fa-star text-info" id="star"></i>
-      //     <p class="text-info">${inputValue}</p>
-      //     <button class="btn btn-primary btn-sm">del</button>
-      // </li>
-      // `);
-      
-}    
+let numberOfitems = 4;
+let actualPage = 1;
+
+var listTodo = document.querySelectorAll("#myUl li").length
+
+let maxPage= Math.ceil( listTodo/ numberOfitems);
+
+function showpageInfo() {
+  document.getElementById('pageInfo').innerHTML = `
+      page ${actualPage} / ${maxPage}
+  `
+}
+showpageInfo();
+
+}   
+  
 
 
 // Add a "checked" symbol when clicking on a list item
@@ -97,3 +94,6 @@ list.addEventListener('click', function(ev) {
     ev.target.classList.toggle('checked');
   }
 }, false);
+
+
+
