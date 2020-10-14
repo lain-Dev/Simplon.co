@@ -16,4 +16,10 @@ form {
 header {
     background-color: black;
     color: white;
+    height: 90px;
+    margin-top: -20px;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

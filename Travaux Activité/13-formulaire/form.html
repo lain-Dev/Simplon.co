@@ -12,9 +12,69 @@
         L'attribut action définit l'emplacement (une URL) où doivent être envoyées les données collectées par le formulaire.
         L'attribut method définit la méthode HTTP utilisée pour envoyer les données (cela peut être « get » ou « post »).-->
 
+        <!--Titre du form-->
         <header>
-            <h3>EVENT REGISTRATION FORM</h3>
+            <h3 class="titre">EVENT REGISTRATION FORM</h3>
         </header>
+
+        <!--Nom et prenom-->
+        <div class="name">
+            <label for="name">Name </label>
+
+            <input type="text" name="name" id="firstName" required>
+
+            <input type="text" name="name" id="lastname" required>
+        </div>
+
+        <!--company-->
+        <div class="company">
+            <label for="name">Company </label>
+
+            <input type="text" name="name" id="company" required>
+        </div>
+
+        <!--email-->
+        <div class="email">
+            <label for="email">Email</label>
+
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <!--Phone-->
+        <div class="phone">
+            <label for="phone">Phone</label>
+
+            <input type="tel" id="areaCode" name="phone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required>
+
+            <input type="tel" id="phoneNumber" name="phone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required>
+            <!--<small>Format: 123-456-7890</small>-->
+        </div>
+
+        <!--Subject-->
+        <div>
+            <label for="formateur-select">Subject</label>
+
+            <select name="formateur" id="selectFormateur">
+                <option value="">Choose optin</option>
+                <option value="bruno">Bruno</option>
+                <option value="adama">Adama</option>
+            </select>
+        </div>
+
+        <!--choise-->
+        <div class="radiosButton">
+            <label for="formateur-select">Are you an existing customer?</label>
+
+            <input type="radio" id="yes" name="choix" value="yes">
+            <label for="yes">Yes</label>
+
+            <input type="radio" id="no" name="choix" value="no">
+            <label for="no">No</label>
+        </div>
 
     </form>
 </body>
