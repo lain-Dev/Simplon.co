@@ -67,7 +67,6 @@ input, select {
 .inputName, .inputPhone {
     width: 80%;
     justify-content: space-between;
-    display: flex;
 }
 
 .firstName, .lastName {
@@ -124,4 +123,32 @@ input, select {
 
 .no {
     margin-left: 80px;
+}
+
+@media (max-width: 1300px) {
+    .phone, .name, .company, .radiosButton, .email, .subject, .envoyer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .phoneCode {
+        width: 40%;
+    }
+
+    .phoneNumber {
+        width: 60%;
+    }
+
+    .radiosButton {
+        margin: auto;
+    }
+
+    section {
+        height: 90%;
+    }
+
+    label {
+        margin-bottom: 10px;
+    }
 }
