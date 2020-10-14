@@ -14,67 +14,108 @@
 
         <!--Titre du form-->
         <header>
-            <h3 class="titre">EVENT REGISTRATION FORM</h3>
+            <h2 class="titre">EVENT REGISTRATION FORM</h2>
         </header>
 
-        <!--Nom et prenom-->
-        <div class="name">
-            <label for="name">Name </label>
+        <section>
+                <!--Nom et prenom-->
+            <div class="name">
+                <label for="name">Name </label>
 
-            <input type="text" name="name" id="firstName" required>
+                <div class="inputName">
 
-            <input type="text" name="name" id="lastname" required>
-        </div>
+                    <article class="firstName">
+                        <input type="text" name="name" id="firstName" required class="boxName1">
+                        <p class="infos">First Name</p>
+                    </article>
+                    
+    
+                    <article class="lastName">
+                        <input type="text" name="name" id="lastname" required class="boxName2">
+                        <p class="infos">last Name</p>
+                    </article>
 
-        <!--company-->
-        <div class="company">
-            <label for="name">Company </label>
+                </div>
 
-            <input type="text" name="name" id="company" required>
-        </div>
+            </div>
 
-        <!--email-->
-        <div class="email">
-            <label for="email">Email</label>
+            <!--company-->
+            <div class="company">
+                <label for="name">Company </label>
 
-            <input type="email" name="email" id="email" required>
-        </div>
+                <input type="text" name="name" id="company" required>
+            </div>
 
-        <!--Phone-->
-        <div class="phone">
-            <label for="phone">Phone</label>
+            <!--email-->
+            <div class="email">
+                <label for="email">Email</label>
 
-            <input type="tel" id="areaCode" name="phone"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            required>
+                <input type="email" name="email" id="email" required>
+            </div>
 
-            <input type="tel" id="phoneNumber" name="phone"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            required>
-            <!--<small>Format: 123-456-7890</small>-->
-        </div>
+            <!--Phone-->
+            <div class="phone">
+                <label for="phone">Phone</label>
 
-        <!--Subject-->
-        <div>
-            <label for="formateur-select">Subject</label>
+                <div class="inputPhone">
+                    <article class="phoneCode">
+                        <input type="tel" id="areaCode" name="phone"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        required class="boxCode">
+                        <p class="infos">Area Code</p>
+                    </article>
+                    
+    
+                    <article class="phoneNumber">
+                        <input type="tel" id="phoneNumber" name="phone"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        required class="boxNumber">
+                        <p class="infos">Phone Number</p>
+                    </article>
+                </div>
+                
+                <!--<small>Format: 123-456-7890</small>-->
+            </div>
 
-            <select name="formateur" id="selectFormateur">
-                <option value="">Choose optin</option>
-                <option value="bruno">Bruno</option>
-                <option value="adama">Adama</option>
-            </select>
-        </div>
+            <!--Subject-->
+            <div>
+                <label for="formateur-select">Subject</label>
 
-        <!--choise-->
-        <div class="radiosButton">
-            <label for="formateur-select">Are you an existing customer?</label>
+                <select name="formateur" id="selectFormateur">
+                    <option value="">Choose option</option>
+                    <option value="bruno">Bruno</option>
+                    <option value="adama">Adama</option>
+                </select>
+            </div>
 
-            <input type="radio" id="yes" name="choix" value="yes">
-            <label for="yes">Yes</label>
+            <!--choise-->
+            <div class="radiosButton">
 
-            <input type="radio" id="no" name="choix" value="no">
-            <label for="no">No</label>
-        </div>
+                    <article class="textChoise">
+                        <label for="formateur-select">Are you an existing customer?</label>
+                    </article>
+
+                    <article class="btnChoise">
+                        <div class="yes">
+                            <input type="radio" id="yes" name="choix" value="yes">
+                            <label for="yes" class="infos">Yes</label>
+                        </div>
+                        
+                        <div class="no">
+                            <input type="radio" id="no" name="choix" value="no">
+                            <label for="no" class="infos">No</label>
+                        </div>
+                        
+                    </article>
+
+            </div>
+
+            <!--Button envoyer-->
+            <div class="envoyer">
+                <input type="submit" value="REGISTER" class="btnEnvoyer">
+            </div>
+        </section>
+        
 
     </form>
 </body>

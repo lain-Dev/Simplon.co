@@ -3,11 +3,12 @@ body {
     position: relative;
     height: 100vh;
     display: flex;
+    font: Helvetica, Arial, sans-serif;
 }
 
 form {
     height: 90vh;
-    width: 80%;
+    width: 50%;
     background-color: white;
     margin: auto;
     border-radius: 10px;
@@ -22,4 +23,105 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+section {
+    height: vh;
+    padding: 15px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    display: flex;
+    padding: 25px 0;
+    height: 50px;
+    align-items: center;
+}
+
+.colum {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+label {
+    font-weight: bolder;
+    width: 20%;
+    margin-top: 20p;
+}
+
+.infos {
+    color: slategray;
+    margin-bottom: -12px;
+}
+
+input, select {
+    border-radius: 5px;
+    background-color: lightgrey;
+    border: none;
+    height: 5vh;
+    width: 80%;
+}
+
+.inputName, .inputPhone {
+    width: 80%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.firstName, .lastName {
+    width: 46%;
+}
+
+.boxName1, .boxName2 {
+    width: 100%;
+}
+
+.boxName2 {
+  justify-content: flex-end;
+}
+
+.phoneCode, .phoneNumber {
+    display: flex;
+    flex-direction: column;
+}
+
+.phoneCode {
+    width: 20%;
+}
+
+.phoneNumber {
+    width: 80%;
+}
+
+.boxNumber {
+    width: 100%;
+}
+
+.btnEnvoyer {
+    color: white;
+    background-color: rgba(255, 0, 0, 0.712);
+    margin-top: 10px;
+    width: 150px;
+    justify-content: center;
+}
+
+.btnChoise {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.radiosButton {
+    display: flex;
+    flex-direction: column;
+}
+
+.textChoise, .btnChoise {
+    margin-right: auto;
+}
+
+.no {
+    margin-left: 80px;
 }
