@@ -1,0 +1,19 @@
+body {
+    background: linear-gradient(to right top, #56afd8 30%, #b62ada 100%);
+    position: relative;
+    height: 100vh;
+    display: flex;
+}
+
+form {
+    height: 90vh;
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+}
+
+header {
+    background-color: black;
+    color: white;
+}
