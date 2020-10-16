@@ -41,14 +41,14 @@
             <div class="company">
                 <label for="name">Company </label>
 
-                <input type="text" name="name" id="company" pattern="[A-Za-z' -]+{3,50}" minlength="3" maxlength="50">
+                <input type="text" name="name" id="company" pattern="[a-zA-Z0-9\s]+>
             </div>
 
             <!--email-->
             <div class="email">
                 <label for="email">Email</label>
 
-                <input type="email" name="email" id="email" required placeholder="mail@example.com" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+                <input type="email" name="email" id="mail" required placeholder="mail@example.com" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
             </div>
 
             <!--Phone-->
@@ -95,12 +95,12 @@
 
                     <article class="btnChoise">
                         <div class="yes">
-                            <input type="radio" id="yes" name="choix" value="yes" class="demo6">
+                            <input type="radio" id="yes" name="choix" value="yes" class="demo6" required>
                             <label for="yes" class="infos">Yes</label>
                         </div>
                         
                         <div class="no">
-                            <input type="radio" id="no" name="choix" value="no" class="demo6">
+                            <input type="radio" id="no" name="choix" value="no" class="demo6" required>
                             <label for="no" class="infos">No</label>
                         </div>
                         
