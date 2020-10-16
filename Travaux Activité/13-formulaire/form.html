@@ -23,18 +23,16 @@
                 <label for="name">Name </label>
 
                 <div class="inputName">
-
                     <article class="firstName">
-                        <input type="text" name="name" id="firstName" required class="boxName1" required>
-                        <p class="infos">First Name</p>
+                        <input type="text" name="name" id="firstName" required class="boxName1" pattern="[A-Za-z' -]{2,20}" minlength="2" maxlength="20">
+                        <label class="infos">First Name</label>
                     </article>
                     
     
                     <article class="lastName">
-                        <input type="text" name="name" id="lastname" required class="boxName2" required>
-                        <p class="infos">Last Name</p>
+                        <input type="text" name="name" id="lastname" required class="boxName2" pattern="[A-Za-z' -]{2,20}" minlength="2" maxlength="20">
+                        <label class="infos">Last Name</label>
                     </article>
-
                 </div>
 
             </div>
@@ -43,14 +41,14 @@
             <div class="company">
                 <label for="name">Company </label>
 
-                <input type="text" name="name" id="company" required>
+                <input type="text" name="name" id="company" pattern="[A-Za-z' -]+{3,50}" minlength="3" maxlength="50">
             </div>
 
             <!--email-->
             <div class="email">
                 <label for="email">Email</label>
 
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email" required placeholder="mail@example.com" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
             </div>
 
             <!--Phone-->
@@ -60,17 +58,17 @@
                 <div class="inputPhone">
                     <article class="phoneCode">
                         <input type="tel" id="areaCode" name="phone"
-                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                        required class="boxCode">
-                        <p class="infos">Area code</p>
+                        pattern="[0-9]{4}"
+                        required class="boxCode" minlength="4" maxlength="4">
+                        <label class="infos">Area code</label>
                     </article>
                     
     
                     <article class="phoneNumber">
                         <input type="tel" id="phoneNumber" name="phone"
-                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                        required class="boxNumber">
-                        <p class="infos">Phone Number</p>
+                        pattern="[0-9]{6}"
+                        required class="boxNumber" minlength="6" maxlength="6">
+                        <label class="infos">Phone Number</label>
                     </article>
                 </div>
                 
@@ -81,7 +79,7 @@
             <div class="subject">
                 <label for="formateur-select">Subject</label>
 
-                <select name="formateur" id="selectFormateur" class="myarrow">
+                <select name="formateur" id="selectFormateur" class="myarrow" required>
                     <option value="">Choose option</option>
                     <option value="bruno">Bruno</option>
                     <option value="adama">Adama</option>
