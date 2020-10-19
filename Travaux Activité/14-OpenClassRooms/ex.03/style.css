@@ -1,0 +1,17 @@
+h1 {
+    color: red;
+    font-size: 3em;
+}
+
+figure {
+    text-align: center;
+}
+
+ul {
+ border: 2px solid red;
+ box-shadow: 6px 6px 0px black;
+}
+
+a:hover {
+    font-weight: bold;
+}
