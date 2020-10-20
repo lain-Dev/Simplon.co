@@ -1,0 +1,77 @@
+
+body {
+    background: url(wall.jpg) no-repeat center;
+    height: 100vh;
+}
+
+h1, h2 {
+    color: red;
+}
+
+figure {
+    text-align: right;
+    margin-right: 20px;
+}
+
+#experience p {
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'AlexBrush-Regular';
+    src: url(AlexBrush-Regular.ttf);
+}
+
+h1, h2, p, ul, li {
+    font-family: 'AlexBrush-Regular';
+}
+
+#profile {
+    border: 3px solid greenyellow;
+    box-shadow: 6px 6px 0px black;
+}
+
+#liseret, #contenu
+{
+    display: inline-block;
+    vertical-align: top;
+}
+/*la fonction display: inline-block;
+Eléments positionnés les uns à côté des autres (comme les inlines) mais qui peuvent être redimensionnés (comme les blocs). */
+
+
+#liseret {
+    background-image: url(lodyas.png);
+    width: 20%;
+    height: 550px;
+    border-radius: 5px;
+    margin-right: 3%;
+}
+
+#contenu {
+    width: 75%;
+}
+
+section {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin-right: 2%;
+}
+
+main {
+    margin-top: 2%;
+}
+
+@media all and (max-width: 1024px)
+{
+    #liseret {
+        display: none;
+    }
+
+    section {
+        display: block;
+        width: auto;
+        margin-left: 10%;
+    }
+}
