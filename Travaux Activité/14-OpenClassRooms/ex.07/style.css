@@ -1,12 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
 
 body {
     background: url(wall.jpg) no-repeat center;
+    height: 100vh;
 }
 
 h1, h2 {
@@ -34,4 +29,36 @@ h1, h2, p, ul, li {
 #profile {
     border: 3px solid greenyellow;
     box-shadow: 6px 6px 0px black;
+}
+
+#liseret, #contenu
+{
+    display: inline-block;
+    vertical-align: top;
+}
+/*la fonction display: inline-block;
+Eléments positionnés les uns à côté des autres (comme les inlines) mais qui peuvent être redimensionnés (comme les blocs). */
+
+
+#liseret {
+    background-image: url(lodyas.png);
+    width: 20%;
+    height: 550px;
+    border-radius: 5px;
+    margin-right: 3%;
+}
+
+#contenu {
+    width: 75%;
+}
+
+section {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin-right: 2%;
+}
+
+main {
+    margin-top: 2%;
 }
