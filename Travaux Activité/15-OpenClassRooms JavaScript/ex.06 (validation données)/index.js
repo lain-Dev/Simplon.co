@@ -11,7 +11,7 @@ code.addEventListener('input', function(e) {
         isValid = true;
     } else {
         verife.setAttribute("disabled", "");
-        codeValide.innerHTML = 'code invalide !'
+        codeValide.innerHTML = value + 'code invalide !'
         isValid = false;
     }
 });
