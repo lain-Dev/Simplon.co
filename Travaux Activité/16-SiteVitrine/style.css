@@ -3,11 +3,13 @@ body {
 }
 
 .wrapper header.header {
-    background-image: url("img/header-bg.jpg");
+    background-image: url("images/home.jpg");
     background-size: 100% auto;
+    background-repeat: no-repeat;
     height: auto;
     overflow: hidden;
     padding-top: 20px;
+    padding-bottom: 50px;
     position: relative;
 }
 
@@ -310,6 +312,7 @@ body {
 
 .wrapper section.works {
     margin-top: 70px;
+    /* margin-bottom: 130px; */
 }
 
 .wrapper section.works .work-images {
@@ -330,10 +333,10 @@ body {
 }
 
 .wrapper section.works .work-text {
-    display: table-cell;
+    display: block;
     height: auto;
     vertical-align: middle;
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 
 .wrapper section.works .work-text h2 {
@@ -878,4 +881,44 @@ div.wrapper section.portfolia div.penination a{
     font-weight: 600;
     color: #4c797d;
     text-decoration: none;
+}
+
+/*img qui sommes Nous*/
+
+#carClient {
+    background: url(images/iconCar.png) center no-repeat;
+    padding-left: 70px;
+}
+
+#relationClient {
+    background: url(images/relationClient.png) no-repeat center;
+    padding-left: 70px;
+    padding-bottom: 20px;
+}
+
+#nosOffres {
+    background: url(images/nosOffres.png) no-repeat center;
+    padding-left: 70px;
+    padding-bottom: 20px;
+}
+
+#carte {
+    box-shadow: -9px 1px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 7px solid white;
+    width: 450px;
+    height: 450px;
+}
+
+/* 
+body > div > section.works > div > div > div{
+    display: inline-block;
+} */
+
+#textPromo {
+    background-color: rgba(255, 255, 255, 0.616);
+    border-radius: 10px;
+}
+
+.colorPromo {
+    color: #455a64;
 }
