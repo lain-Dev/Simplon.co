@@ -1,20 +1,27 @@
 function send() {
-    var request = new XMLHttpRequest();//créer objet AJAX
+    let request = new XMLHttpRequest();//créer objet AJAX
     var value = document.getElementById("value").value//récupérer valeur input champs
-    var resultat = document.getElementById("result")//select id afficher résultat
     
     request.open("POST", "https://mockbin.com/request");//request post avec url définis
     request.setRequestHeader("Content-Type", "application/json");//header request
-    request.send(JSON.stringify(value));
+    request.onreadystatechange = function() {  //effectuer certaines actions en fonction de la réponse
+        let result = document.querySelector('#result')
 
-    resultat.innerHTML = postData.text.value
+        if (request.readyState == 4 && request.status == 200) { //propriaite : 4: request finished and response is ready & status pour 200: "OK"
+          let response = JSON.parse(request.responseText);
+          result.textContent = response.postData.text;
+        }
+      }
+
+    request.send(JSON.stringify(document.getElementById("value").value)); //transformer notre objet JavaScript en JSON
+
 }
   
 //Event click sur btn pour lancer function 
-let btnEnvoyer = document.getElementById('btn')
+const btnEnvoyer = document.querySelector('input[type="submit"]');
 
 btnEnvoyer.addEventListener('click', function(event) {
-    send()
     event.preventDefault()//éviter action défaut 
-    event.stopPropagation()
+    send()
 })
+
