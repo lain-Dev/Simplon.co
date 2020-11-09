@@ -1,0 +1,10 @@
+Si du code synchrone est du code qui s'exécute ligne après ligne en attendant la fin de l'exécution de la ligne précédente, alors on peut facilement en déduire que du code asynchrone va s'exécuter ligne après ligne, mais la ligne suivante n'attendra pas que la ligne asynchrone ait fini son exécution. Prenons cet exemple :
+
+let productId = 1;
+let productPrice = getProductPriceAsync(productId);
+doSomething(productPrice);
+En admettant que la fonction  getProductPriceAsync()   soit asynchrone, alors la ligne suivante sera exécutée avant la fin de l'exécution de la fonction asynchrone, mais il ne sera pas encore possible d'utiliser la valeur de  productPrice  (nous verrons dans le chapitre suivant comment nous pouvons nous en servir).
+
+Mais comment peut-on faire ça avec un langage synchrone ?
+
+Avec ce qu'on appelle l'event loop !

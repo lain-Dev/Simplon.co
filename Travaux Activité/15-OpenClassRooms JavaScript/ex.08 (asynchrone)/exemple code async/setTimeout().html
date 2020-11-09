@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window setTimeout() Method</title>
+</head>
+<body>
+    <p>Click the button to wait 3 seconds, then alert "Hello".</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(alertFunc, 3000);
+}
+
+function alertFunc() {
+  alert("Hello!");
+}
+</script>
+</body>
+</html>

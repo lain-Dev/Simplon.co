@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count forever</title>
+</head>
+<body>
+    <button onclick="startCount()">Start count!</button>
+<input type="text" id="txt">
+<button onclick="stopCount()">Stop count!</button>
+
+<p>
+Click on the "Start count!" button above to start the timer. The input field will count forever, starting at 0. Click on the "Stop count!" button to stop the counting. Click on the "Start count!" button to start the timer again.
+</p>
+
+<script>
+var c = 0;
+var t;
+var timer_is_on = 0;
+
+function timedCount() {
+  document.getElementById("txt").value = c;
+  c = c + 1;
+  t = setTimeout(timedCount, 1000);
+}
+
+function startCount() {
+  if (!timer_is_on) {
+    timer_is_on = 1;
+    timedCount();
+  }
+}
+
+function stopCount() {
+  clearTimeout(t);
+  timer_is_on = 0;
+}
+</script>
+</body>
+</html>
