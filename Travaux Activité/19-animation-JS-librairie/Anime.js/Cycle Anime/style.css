@@ -1,0 +1,15 @@
+body
+{
+ background-color: #606468;
+}
+#tyre1, #tyre2
+{
+   transform-box: fill-box;
+    transform-origin: center;
+}
+
+ #padel
+{
+   transform-box: fill-box;
+    transform-origin: 91% 49%;
+}
