@@ -1,0 +1,47 @@
+Linter, minifier, bundler, transpiler
+Qu'est-ce que c'est que ces mots barbares ?!   🤔
+
+Ces mots "barbares" venus de l'anglais nous seront en fait très utiles ! Voyons ensemble ce que représente chacun d'entre eux.
+
+Linter
+Le linter est un programme qui va analyser notre code et détecter les erreurs de syntaxe, les variables non utilisées, les variables qui n'existent pas, la mauvaise organisation du code, le non-respect des bonnes pratiques d'écriture de code...
+
+Le JavaScript étant un langage non compilé, vous ne verrez les erreurs de syntaxe de votre code que lors de l'exécution du code concerné. C'est-à-dire que si une de vos fonctions utilise une variable qui n'est pas définie, vous ne le saurez que lorsque votre fonction sera exécutée. Autant dire que pour certaines fonctions peu utilisées, vous pouvez très facilement laisser des erreurs "d'inattention" passer en production. 😫
+
+Un linter pourra donc vous aider à régler ces erreurs avant que vos utilisateurs n'en subissent les conséquences (les tests sont aussi un très bon moyen complémentaire au linter pour éviter les erreurs, mais ce n'est pas l'objet de ce cours). Il pourra aussi vous aider à optimiser un peu votre code et vous sera d'une grande aide pour définir des bonnes pratiques d'écriture de code lorsque vous travaillerez en équipe !
+
+Voici quelques exemples de linters : JSLint, ESLint.
+
+Minifier
+Comme vous le savez, votre code JavaScript est chargé par votre navigateur. Cela signifie que votre navigateur va demander à votre serveur votre code JavaScript afin de l'exécuter. Il est alors évident que moins votre code sera lourd (en termes de taille de fichier), plus votre navigateur pourra le récupérer et le charger rapidement.
+
+Un minifier est donc un programme responsable de la minification de votre code. C'est-à-dire qu'il va essayer de rendre votre code le plus léger possible en retirant les espaces et retours à la ligne inutiles, en renommant vos variables avec des noms plus courts, en supprimant le code non utilisé, en supprimant les commentaires, en optimisant certains bouts de code pour les réécrire avec une syntaxe plus légère, etc.
+
+Malgré les bonnes connexions Internet qui se développent de plus en plus, la minification du code n'est pas quelque chose à négliger, car si vous avez un site web avec beaucoup de trafic, c'est autant de requêtes qui sont faites pour récupérer votre code. Chaque octet compte afin d'alléger la charge des serveurs et de donner à vos utilisateurs une réponse la plus rapide possible !
+
+Voici quelques exemples de minifiers : node-minify, UglifyJS.
+
+Bundler
+De la même manière qu'il est important d'avoir un code le plus léger possible, il est aussi important de réduire au maximum le nombre de fichiers qui composent votre code !
+
+C'est donc le rôle du bundler. Il va se charger de packager votre code pour qu'il tienne dans un seul fichier.
+
+Voici un exemple de bundler : Webpack.
+
+Transpiler
+Vous devez vous en douter, le langage JavaScript évolue. À l'heure actuelle, nous en sommes à la version ECMAScript 2018  (ES9), mais déjà la version ECMAScript 2015 (ES6) n'est plus supportée dans son intégralité tous les navigateurs. Et c'est bien dommage, car les nouvelles versions peuvent offrir des choses intéressantes ( async  /  await  par exemple).
+
+Mais alors comment coder avec la dernière version de JavaScript tout en étant compatible avec tous les navigateurs ? Avec un transpiler !
+
+Voici un exemple de transpiler : Babel.
+
+En résumé
+Dans ce chapitre, vous avez appris :
+
+Ce qu'est un linter et à quoi ça sert ;
+
+Ce qu'est un minifier et à quoi ça sert ;
+
+Ce qu'est un bundler et à quoi ça sert ;
+
+Ce qu'est un transpiler et à quoi ça sert

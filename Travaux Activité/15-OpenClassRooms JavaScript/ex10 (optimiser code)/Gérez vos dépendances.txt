@@ -1,0 +1,28 @@
+NPM est un gestionnaire de paquets (package manager en anglais). C'est un programme qui vous permet d'installer très facilement des modules pour le JavaScript, et cela comprend les outils dont nous avons parlé dans les chapitres précédents.
+
+Qu'est-ce qu'un module ?
+Un module est un bout de code écrit par quelqu'un (peut-être bientôt par vous !) et qui résout une problématique commune à beaucoup de développeurs : comme un parser XML, un générateur d'uuid (des identifiants uniques), un router, un framework de rendu HTML, etc.
+
+Afin qu'ils puissent être utilisés par tout le monde, ces modules sont publiés dans un gestionnaire de paquets, en l'occurence ici, NPM. Voyons comment cela fonctionne...
+
+Installez NPM
+NPM est compris dans Node.js, un programme permettant d'écrire des applications en JavaScript. Il suffit donc de se rendre sur la page de téléchargement de Node.js et d'installer Node.js afin de profiter de NPM.
+
+Maintenant que vous avez installé ce qu'il faut, vous pouvez exécuter des commandes de NPM depuis votre terminal !
+
+Initialisez votre projet
+NPM nécessite un fichier nommé  package.json  afin d'avoir des informations sur votre projet : son nom, sa version, les modules à installer, etc.
+
+Vous pouvez le créer manuellement ou bien utiliser la commande suivante pour le créer plus facilement :
+
+npm init
+Installez un module
+Pour installer un nouveau module c'est très simple, il suffit de faire :
+
+npm install <module_name> --save-dev
+--save-dev  signifie que l'on souhaite que NPM sauvegarde cette dépendance dans le fichier   package.json  en tant que dépendance de développement. Il existe aussi   --save  qui ajoute la dépendance en tant que dépendance de production.
+
+Lorsque vous clonez votre projet pour la première fois depuis un repository git, vous pourrez exécuter :
+
+npm install
+Cette commande va installer toutes les dépendances de votre projet qui ont été ajoutées dans le fichier   package.json . Ce fichier est très utile pour mémoriser et installer tous les modules dont dépend votre projet !
