@@ -1,7 +1,7 @@
 let meteoParis = document.getElementById('ask-weather')
 let resultatMeteo = document.getElementById('weather-result')
 
-function paskWeather() {
+function askWeather() {
     var request = new XMLHttpRequest();
     request.onreadystatechange = function() {
         if (this.readyState == XMLHttpRequest.DONE && this.status == 200) {
@@ -18,4 +18,4 @@ function paskWeather() {
 
 
 
-meteoParis.addEventListener('click', function() {paskWeather()})
+meteoParis.addEventListener('click', function() {askWeather()})
