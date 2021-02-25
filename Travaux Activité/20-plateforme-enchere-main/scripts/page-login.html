@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Login</title>
+
+    <link rel="stylesheet" href="../styles/style-login.css">
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+      
+          <!-- Icon -->
+          <div class="fadeIn first">
+            <img src="../ressources/img/admin.jpg" id="icon" alt="User Icon" />
+          </div>
+      
+          <!-- Login Form -->
+          <form action="module-login.php" method="POST">
+            <input type="text" id="user" class="fadeIn second" name="user" placeholder="login" required pattern='[a-zA-Z ]+'>
+            <input type="password" id="mdp" class="fadeIn third" name="mdp" placeholder="password" required pattern='[a-zA-Z0-9 ]+'>
+            <input type="submit" class="fadeIn fourth" value="connexion" id="connexion" name="connexion">
+          </form>
+      
+        </div>
+      </div>
+  </body>
+
+</html>
